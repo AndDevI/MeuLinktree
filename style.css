@@ -6,7 +6,7 @@
 
 :root {
     --text-color: white;
-    --bg-url: url(./assets/bg-mobile.jpg);
+    --bg-url: url(./assets/night.gif);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(255, 255, 255, 0.05);
@@ -16,7 +16,7 @@
 
 .light {
     --text-color: black;
-    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --bg-url: url(./assets/day.gif);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.1);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -39,6 +39,12 @@ body *{
     max-width: 360px;
     margin: 56px auto 0px;
     padding: 0 24px;
+
+    background: transparent;
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;   
 }
 
 /* Profile */
@@ -166,11 +172,11 @@ footer {
 
 @media (min-width: 700px) {
     :root {
-        --bg-url: url(./assets/bg-desktop.jpg);
+        --bg-url: url(./assets/night.gif);
     }
 
     .light {
-        --bg-url: url(./assets/bg-desktop-light.jpg);
+        --bg-url: url(./assets/day.gif);;
     }
 }
 
